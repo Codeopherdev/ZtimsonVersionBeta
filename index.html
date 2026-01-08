@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ztimson - Banda de Rock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Electric Guitar Navigation -->
+    <nav class="guitar-nav" id="guitarNav">
+        <div class="electric-guitar-body">
+            <div class="guitar-glow"></div>
+            <div class="guitar-strings">
+                <div class="string"></div>
+                <div class="string"></div>
+                <div class="string"></div>
+                <div class="string"></div>
+                <div class="string"></div>
+                <div class="string"></div>
+            </div>
+            <div class="nav-container">
+                <div class="logo-container">
+                    <span class="logo">Ztimson</span>
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="nav-items">
+                    <a href="#banda" class="nav-link">
+                        <i class="bi bi-music-note-beamed"></i> Banda
+                    </a>
+                    <a href="#presentaciones" class="nav-link">
+                        <i class="bi bi-calendar-event"></i> Presentaciones
+                    </a>
+                    <a href="#integrantes" class="nav-link">
+                        <i class="bi bi-people"></i> Integrantes
+                    </a>
+                    <a href="#videos" class="nav-link">
+                        <i class="bi bi-play-circle"></i> Videos
+                    </a>
+                    <a href="#contacto" class="nav-link">
+                        <i class="bi bi-envelope"></i> Contacto
+                    </a>
+                </div>
+            </div>
+            <div class="guitar-pickups">
+                <div class="pickup"></div>
+                <div class="pickup"></div>
+                <div class="pickup"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <section class="hero" id="home">
+        <div class="video-background">
+            <video id="heroVideo" autoplay muted loop playsinline>
+                <!-- Agrega tu video aquí: <source src="burlesque.mp4" type="video/mp4"> -->
+                <source src="BurlesqueRecortado.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <!-- Smoke Effects -->
+        <div class="smoke-container">
+            <div class="smoke smoke-1"></div>
+            <div class="smoke smoke-2"></div>
+            <div class="smoke smoke-3"></div>
+            <div class="smoke smoke-4"></div>
+        </div>
+        
+        <!-- Ver Video Button -->
+        <a href="https://youtu.be/zPhMlNQfSOc?si=5tRWu2QsjnBJYBQ4" target="_blank" class="ver-video-button" title="Ver video completo en YouTube">
+            <i class="bi bi-youtube"></i>
+            <span>VER VIDEO COMPLETO</span>
+        </a>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Banda Section -->
+    <section class="section banda-section" id="banda">
+        <div class="container">
+            <h2 class="section-title">La Banda</h2>
+            <div class="banda-content">
+                <div class="banda-text">
+                    <p>Ztimson es una banda de rock originaria de Arequipa, Perú, que fusiona la energía del rock clásico con elementos teatrales y sinfónicos únicos. Nuestro espectáculo "Burlesque" es un homenaje a las grandes bandas que nos inspiraron, especialmente a Saurom.</p>
+                    <p>Con una propuesta visual impactante y un sonido potente enriquecido por violín, flauta y teclados, llevamos cada presentación a un nivel cinematográfico que cautiva a la audiencia. Desde la Ciudad Blanca, llevamos el rock peruano al mundo.</p>
+                    <div class="banda-location">
+                        <i class="bi bi-geo-alt-fill location-icon"></i>
+                        <span class="location-text">Arequipa, Perú</span>
+                    </div>
+                </div>
+                <div class="banda-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Años</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Presentaciones</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Álbumes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrantes Section -->
+    <section class="section integrantes-section" id="integrantes">
+        <div class="container">
+            <h2 class="section-title">Integrantes</h2>
+            <div class="stage-container">
+                <!-- Stage Background -->
+                <div class="stage-background">
+                    <div class="stage-lights">
+                        <div class="light light-1"></div>
+                        <div class="light light-2"></div>
+                        <div class="light light-3"></div>
+                        <div class="light light-4"></div>
+                        <div class="light light-5"></div>
+                    </div>
+                </div>
+                
+                <!-- Band Silhouette Image -->
+                <div class="band-silhouette-container">
+                    <!-- Coloca tu imagen aquí: band-silhouette.png -->
+                    <img src="IntegrantesZtimsonBackground.png" alt="Band Silhouette" class="band-silhouette-img">
+                    
+                    <!-- Hotspots interactivos sobre cada músico según tu imagen -->
+                    
+                    <!-- Flautista (extremo izquierda arriba) -->
+                    <div class="member-hotspot" style="left: 5%; bottom: 48%; width: 12%; height: 32%;" data-member="flautista">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Guitarrista Lead (izquierda arriba) -->
+                    <div class="member-hotspot" style="left: 20%; bottom: 45%; width: 11%; height: 35%;" data-member="guitarrista-lead">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Vocalista Principal (centro arriba con micrófono) -->
+                    <div class="member-hotspot" style="left: 40%; bottom: 42%; width: 14%; height: 38%;" data-member="vocalista-principal">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Violinista (derecha arriba con vestido) -->
+                    <div class="member-hotspot" style="left: 70%; bottom: 45%; width: 13%; height: 35%;" data-member="violinista">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Bajista (extremo izquierda abajo) -->
+                    <div class="member-hotspot" style="left: 0%; bottom: 8%; width: 11%; height: 38%;" data-member="bajista">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Guitarrista Rítmica (izquierda abajo arrodillado) -->
+                    <div class="member-hotspot" style="left: 14%; bottom: 5%; width: 12%; height: 35%;" data-member="guitarrista-ritmica">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Baterista (centro con batería) -->
+                    <div class="member-hotspot" style="left: 35%; bottom: 0%; width: 24%; height: 45%;" data-member="baterista">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Vocalista Secundaria (derecha-centro saltando) -->
+                    <div class="member-hotspot" style="left: 62%; bottom: 8%; width: 13%; height: 38%;" data-member="vocalista-secundaria">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                    
+                    <!-- Tecladista (extremo derecha sentado) -->
+                    <div class="member-hotspot" style="left: 78%; bottom: 10%; width: 14%; height: 35%;" data-member="tecladista">
+                        <div class="hotspot-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentaciones Destacadas Section -->
+    <section class="section presentaciones-section" id="presentaciones">
+        <div class="container">
+            <h2 class="section-title">Presentaciones Destacadas</h2>
+            <div class="presentaciones-grid">
+                <div class="presentacion-card">
+                    <div class="presentacion-image">
+                        <i class="bi bi-music-note-list"></i>
+                    </div>
+                    <div class="presentacion-content">
+                        <h3>Burlesque - Homenaje a Saurom</h3>
+                        <p><i class="bi bi-geo-alt"></i> Teatro Municipal de Arequipa</p>
+                        <p><i class="bi bi-clock"></i> Espectáculo completo - 2 horas</p>
+                        <p class="presentacion-desc">Nuestro show más emblemático con producción teatral completa</p>
+                    </div>
+                </div>
+                <div class="presentacion-card">
+                    <div class="presentacion-image">
+                        <i class="bi bi-vinyl"></i>
+                    </div>
+                    <div class="presentacion-content">
+                        <h3>Rock Sinfónico en Vivo</h3>
+                        <p><i class="bi bi-geo-alt"></i> Centro Cultural Chaves de la Rosa</p>
+                        <p><i class="bi bi-clock"></i> Concierto acústico - 90 min</p>
+                        <p class="presentacion-desc">Versiones íntimas con violín, flauta y teclados</p>
+                    </div>
+                </div>
+                <div class="presentacion-card">
+                    <div class="presentacion-image">
+                        <i class="bi bi-lightning"></i>
+                    </div>
+                    <div class="presentacion-content">
+                        <h3>Rock en la Ciudad Blanca</h3>
+                        <p><i class="bi bi-geo-alt"></i> Plaza de Armas de Arequipa</p>
+                        <p><i class="bi bi-clock"></i> Festival - 120 min</p>
+                        <p class="presentacion-desc">Energía pura del rock con toda la banda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximas Fechas Section -->
+    <section class="section proximas-fechas-section" id="proximas-fechas">
+        <div class="container">
+            <h2 class="section-title">Próximas Fechas</h2>
+            <div class="fechas-list">
+                <div class="fecha-item">
+                    <div class="fecha-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">FEB</span>
+                        <span class="date-year">2026</span>
+                    </div>
+                    <div class="fecha-info">
+                        <h3><i class="bi bi-music-note-beamed"></i> Burlesque - Estreno</h3>
+                        <p><i class="bi bi-geo-alt-fill"></i> Teatro Municipal de Arequipa, Perú</p>
+                        <p><i class="bi bi-clock-fill"></i> 8:00 PM</p>
+                    </div>
+                    <button class="fecha-button">
+                        <i class="bi bi-ticket-perforated"></i> Reservar
+                    </button>
+                </div>
+                <div class="fecha-item">
+                    <div class="fecha-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">FEB</span>
+                        <span class="date-year">2026</span>
+                    </div>
+                    <div class="fecha-info">
+                        <h3><i class="bi bi-music-note-beamed"></i> Rock Sinfónico</h3>
+                        <p><i class="bi bi-geo-alt-fill"></i> Centro Cultural Chaves de la Rosa, Arequipa</p>
+                        <p><i class="bi bi-clock-fill"></i> 7:30 PM</p>
+                    </div>
+                    <button class="fecha-button">
+                        <i class="bi bi-ticket-perforated"></i> Reservar
+                    </button>
+                </div>
+                <div class="fecha-item">
+                    <div class="fecha-date">
+                        <span class="date-day">14</span>
+                        <span class="date-month">MAR</span>
+                        <span class="date-year">2026</span>
+                    </div>
+                    <div class="fecha-info">
+                        <h3><i class="bi bi-music-note-beamed"></i> Festival Rock en la Ciudad Blanca</h3>
+                        <p><i class="bi bi-geo-alt-fill"></i> Plaza de Armas, Arequipa, Perú</p>
+                        <p><i class="bi bi-clock-fill"></i> 6:00 PM</p>
+                    </div>
+                    <button class="fecha-button">
+                        <i class="bi bi-ticket-perforated"></i> Reservar
+                    </button>
+                </div>
+                <div class="fecha-item">
+                    <div class="fecha-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">ABR</span>
+                        <span class="date-year">2026</span>
+                    </div>
+                    <div class="fecha-info">
+                        <h3><i class="bi bi-music-note-beamed"></i> Gira Nacional - Lima</h3>
+                        <p><i class="bi bi-geo-alt-fill"></i> Explanada Parque de la Exposición, Lima</p>
+                        <p><i class="bi bi-clock-fill"></i> 7:00 PM</p>
+                    </div>
+                    <button class="fecha-button">
+                        <i class="bi bi-ticket-perforated"></i> Reservar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="section videos-section" id="videos">
+        <div class="container">
+            <h2 class="section-title">Videos</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-iframe-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/misOFSDDkIg" 
+                            title="Burlesque - Video Oficial" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Inmensidad - Video Oficial</h3>
+                </div>
+                <div class="video-card">
+                    <div class="video-iframe-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/wFrrc5Z7jN8" 
+                            title="En Vivo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>EP Sueños Eternos - Ztimson</h3>
+                </div>
+                <div class="video-card">
+                    <div class="video-iframe-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/r_kn47KGbOg" 
+                            title="Behind The Scenes" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Preludio de Tormenta - Ztimson VideoCuarentena</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <h2 class="section-title">Mantente Conectado</h2>
+            <p>Suscríbete para recibir noticias, fechas de conciertos y contenido exclusivo</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu email" class="newsletter-input">
+                <button type="submit" class="newsletter-button">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Ztimson</h3>
+                    <p>Rock con alma</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="#banda">Banda</a>
+                    <a href="#presentaciones">Presentaciones</a>
+                    <a href="#integrantes">Integrantes</a>
+                    <a href="#videos">Videos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Spotify">
+                            <i class="bi bi-spotify"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ztimson - Arequipa, Perú. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
